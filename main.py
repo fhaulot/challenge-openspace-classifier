@@ -1,11 +1,11 @@
 
 
 # Connect main with the others modules
+from utils.table import Table
 from utils.openspace import Openspace
 
 # Import library to make calculation
 import math
-from table import Table
 
 # Request the user to indicate the path to the file with the attendants list
 #path = input("Please specify the file patch with the list of attendants:")
