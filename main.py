@@ -1,5 +1,3 @@
-
-
 # Connect main with the others modules
 from utils.table import Table
 from utils.openspace import Openspace
@@ -8,8 +6,7 @@ from utils.openspace import Openspace
 import math
 
 # Request the user to indicate the path to the file with the attendants list
-#path = input("Please specify the file patch with the list of attendants:")
-path = "C:/Users/bljor/OneDrive/Documents/GitHub/colleagues.csv"
+path = input("Please specify the file patch with the list of attendants:")
 
 # Initiate a list to include all attendants in the file
 names = []
@@ -29,7 +26,7 @@ qty = math.ceil(seats/4)
 tables = [Table(4) for t in range(qty)]
 
 # Summarise the input
-print(f"\nThank you! Your file includes {seats} attendants. That will be assigned to {qty} tables")
+print(f"\nThank you! Your file includes {seats} attendants. That will be assigned to {qty} tables.")
 
 # Call the different methods that will set the class organisation
 # Create an Openspace object
