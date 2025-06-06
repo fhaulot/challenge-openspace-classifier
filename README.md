@@ -1,4 +1,4 @@
-# open-space-project
+# Challenge-openspace-classifier
 
 ## Description
 
