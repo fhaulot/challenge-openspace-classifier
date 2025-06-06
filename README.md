@@ -15,3 +15,11 @@ Let's see wath the code in main.py do
  2. The "openspace.py" will see how many seats and tables are available in "table.py" 
  3. The "table.py" will return if seats are empty or full.
 
+## Ressources
+
+We made a new repository to have the right repository name. The previous is here, present with all the commit we have done trough the day. 
+https://github.com/fhaulot/open-space-project.git
+
+## Collaborators
+
+Floriane and Jordi

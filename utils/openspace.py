@@ -1,5 +1,6 @@
 import random
 import pandas as pd
+from utils.table import Table
 
 class Openspace:
 
@@ -15,7 +16,7 @@ class Openspace:
 
          for n in names:
                for t in self.tables:
-                    table.assign_seat(n)
+                    Table.assign_seat(n)
   
 
      # Method to show the configuration of the tables based on input
