@@ -1,15 +1,12 @@
-
-
 # Connect main with the others modules
+from utils.table import Table
 from utils.openspace import Openspace
 
 # Import library to make calculation
 import math
-from utils.table import Table
 
 # Request the user to indicate the path to the file with the attendants list
-#path = input("Please specify the file patch with the list of attendants:")
-path = "C:/Users/bljor/OneDrive/Documents/GitHub/colleagues.csv"
+path = input("Please specify the file patch with the list of attendants:")
 
 # Initiate a list to include all attendants in the file
 names = []
@@ -28,21 +25,19 @@ qty = math.ceil(seats/4)
 # Create the tables in main
 tables = [Table(4) for t in range(qty)]
 
-print(tables)
 # Summarise the input
-# print(f"\nThank you! Your file includes {seats} attendants.\n\nHere is the list:")
-# print(*names, sep ='\n')
+print(f"\nThank you! Your file includes {seats} attendants. That will be assigned to {qty} tables.")
 
 # Call the different methods that will set the class organisation
 # Create an Openspace object
-#space = Openspace(tables)
+space = Openspace(tables)
 
 # Set all attendants to their seats
-#Openspace.organize(names)
+space.organize(names)
 
 # Show the seating layout
-#Openspace.display()
+space.display()
 
 # Save the layout to Excel in active directory
-#Openspace.store("seating_arrangement.xlsx")
+space.store("seating_arrangement.xlsx")
 
